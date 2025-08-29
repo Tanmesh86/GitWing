@@ -7,7 +7,7 @@ const { sign } = require('../utils/jwtUtil');
 
 const GITHUB_CLIENT_ID = process.env.GITHUB_CLIENT_ID;
 const GITHUB_CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET;
-const SERVER_URL = process.env.SERVER_URL || `http://localhost:${process.env.PORT || 5000}`;
+const SERVER_URL = process.env.SERVER_URL || `https://auth-service-j350.onrender.com`;
 const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:3000';
 
 if (!GITHUB_CLIENT_ID || !GITHUB_CLIENT_SECRET) {
