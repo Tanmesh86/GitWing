@@ -8,7 +8,7 @@ const { sign } = require('../utils/jwtUtil');
 const GITHUB_CLIENT_ID = process.env.GITHUB_CLIENT_ID;
 const GITHUB_CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET;
 const SERVER_URL = process.env.SERVER_URL || `https://auth-service-j350.onrender.com`;
-const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:3000';
+const FRONTEND_URL = process.env.FRONTEND_URL || 'https://react-app-e7c3.onrender.com/';
 
 if (!GITHUB_CLIENT_ID || !GITHUB_CLIENT_SECRET) {
   console.warn('⚠️ GitHub OAuth credentials not provided in env vars');
