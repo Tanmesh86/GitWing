@@ -26,11 +26,11 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17"
   },
-  "scripts": {
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "dev": "react-scripts start"
-  },
+ "scripts": {
+  "start": "serve -s build",
+  "build": "npx react-scripts build",
+  "dev": "npx react-scripts start"
+},
   "browserslist": {
     "production": [
       ">0.2%",
