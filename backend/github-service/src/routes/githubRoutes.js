@@ -111,7 +111,7 @@ router.get("/repos/:owner/:repo/pulls/:number/analyze", authenticate, async (req
 
     // 2. Send it to Rule Engine Service
     const analysisResponse = await axios.post(
-      "http://localhost:5002/analyze",
+      "https://rule-engine-v2ay.onrender.com/analyze",
       prData
     );
 
