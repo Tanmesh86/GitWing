@@ -124,6 +124,11 @@ app.get('/auth/logout', (req, res, next) => {
   });
 });
 
+// Health check
+app.get("/health", (req, res) => {
+  res.json({ status: "Auth Service running ✅" });
+});
+
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

@@ -82,6 +82,12 @@ app.post("/api/feedback", async (req, res) => {
   }
 });
 
+// Health check
+app.get("/health", (req, res) => {
+  res.json({ status: "Feedback Service running ✅" });
+});
+
+
 // GET /api/feedbacks
 app.get("/api/feedbacks", async (req, res) => {
   try {
