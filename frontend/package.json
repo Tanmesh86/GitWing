@@ -5,8 +5,7 @@
   "dependencies": {
     "axios": "^1.6.7",
     "ajv": "^8.17.1",
-"ajv-keywords": "^5.1.0",
-
+    "ajv-keywords": "^5.1.0",
     "bootstrap": "^5.3.7",
     "diff": "^8.0.2",
     "framer-motion": "^12.23.12",
@@ -44,8 +43,7 @@
       "last 1 safari version"
     ]
   },
-"engines": {
-  "node": "20.x"
-}
-
+  "engines": {
+    "node": "18.x"
+  }
 }
