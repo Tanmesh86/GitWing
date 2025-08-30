@@ -33,7 +33,7 @@ mongoose.connect(process.env.MONGO_URI, {
 const app = express();
 
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: process.env.FRONTEND_URL || 'https://react-app-e7c3.onrender.com',
   credentials: true
 }));
 app.use(express.json());
