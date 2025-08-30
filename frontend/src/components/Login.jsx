@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 const Login = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
-      window.location.href = "http://localhost:5000/auth/github";
+      window.location.href = "https://auth-service-j350.onrender.com/auth/github";
     }, 2000);
 
     return () => clearTimeout(timer);
