@@ -54,14 +54,14 @@ export default function Dashboard() {
 
     const fetchData = async () => {
       try {
-        const profileRes = await fetch("http://localhost:5001/github/profile", {
+        const profileRes = await fetch("https://gitwing.onrender.com/github/profile", {
           headers: { Authorization: `Bearer ${token}` },
         });
         if (!profileRes.ok) throw new Error("Failed to fetch profile");
         const profileData = await profileRes.json();
         setProfile(profileData);
 
-        const reposRes = await fetch("http://localhost:5001/github/repos", {
+        const reposRes = await fetch("https://gitwing.onrender.com/github/repos", {
           headers: { Authorization: `Bearer ${token}` },
         });
         if (!reposRes.ok) throw new Error("Failed to fetch repos");

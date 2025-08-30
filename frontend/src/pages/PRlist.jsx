@@ -28,7 +28,7 @@ export default function PRList() {
 
       try {
         const res = await fetch(
-          `http://localhost:5001/github/repos/${owner}/${repo}/pulls`,
+          `https://gitwing.onrender.com/github/repos/${owner}/${repo}/pulls`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
 

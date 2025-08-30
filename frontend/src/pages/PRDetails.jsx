@@ -34,7 +34,7 @@ const navigate = useNavigate();
 
       try {
         const res = await fetch(
-          `http://localhost:5001/github/repos/${owner}/${repo}/pulls/${number}/details`,
+          `https://gitwing.onrender.com/github/repos/${owner}/${repo}/pulls/${number}/details`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
           if (res.status === 401) {
@@ -62,7 +62,7 @@ const navigate = useNavigate();
       try {
         const token = localStorage.getItem("authToken");
         const res = await fetch(
-          `http://localhost:5001/github/repos/${owner}/${repo}/pulls/${number}/analyze`,
+          `https://gitwing.onrender.com/github/repos/${owner}/${repo}/pulls/${number}/analyze`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
 
