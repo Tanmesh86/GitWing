@@ -44,7 +44,8 @@
       "last 1 safari version"
     ]
   },
-  "engines": {
-  "node": "18.x"
+"engines": {
+  "node": "20.x"
 }
+
 }
