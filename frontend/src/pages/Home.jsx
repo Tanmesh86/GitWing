@@ -54,7 +54,7 @@ useEffect(() => {
   };
 
   const handleGetStarted = () => {
-    window.location.href = "/dashboard"; // change path if needed
+    window.location.href = "https://react-app-e7c3.onrender.com/dashboard"; // change path if needed
   };
 
   return (
