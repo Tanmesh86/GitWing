@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Github, BarChart3, GitPullRequest, AlertTriangle } from "lucide-react"; 
 import "../styles/Home.css";
+import { Link } from "react-router-dom";
+
 import Footer from "./Footer";
 const Home = () => {
   const gradientRef = useRef(null);
@@ -89,12 +91,12 @@ useEffect(() => {
         </p>
         <div className="flex gap-4 animate-buttons">
           {isLoggedIn ? (
-            <button
-              onClick={handleGetStarted}
-              className="px-8 py-3 text-lg font-medium rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg hover:scale-105 hover:shadow-xl transition duration-300"
-            >
-              Get Started
-            </button>
+         <Link
+  to="/dashboard"
+  className="px-8 py-3 text-lg font-medium rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg hover:scale-105 hover:shadow-xl transition duration-300 inline-block text-center"
+>
+  Get Started
+</Link>
           ) : (
             <button
               onClick={handleLogin}
@@ -191,12 +193,12 @@ useEffect(() => {
           so you can focus on building great software.
         </p>
         {isLoggedIn ? (
-          <button
-              onClick={handleGetStarted}
-              className="px-8 py-3 text-lg font-medium rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg hover:scale-105 hover:shadow-xl transition duration-300"
-            >
-              Get Started
-            </button>
+         <Link
+  to="/dashboard"
+  className="px-8 py-3 text-lg font-medium rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg hover:scale-105 hover:shadow-xl transition duration-300 inline-block text-center"
+>
+  Get Started
+</Link>
         ) : (
           <button
             onClick={handleLogin}
