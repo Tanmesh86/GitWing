@@ -5,7 +5,6 @@ import Footer from "./Footer";
 const Home = () => {
   const gradientRef = useRef(null);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -54,8 +53,8 @@ useEffect(() => {
     window.location.href = "https://auth-service-j350.onrender.com/auth/github";
   };
 
-    const handleGetStarted = () => {
-    navigate("https://react-app-e7c3.onrender.com/dashboard"); // React Router handles it
+  const handleGetStarted = () => {
+    window.location.href = "/dashboard"; // change path if needed
   };
 
   return (
