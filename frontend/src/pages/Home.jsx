@@ -2,7 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import { Github, BarChart3, GitPullRequest, AlertTriangle } from "lucide-react"; 
 import "../styles/Home.css";
 import { Link } from "react-router-dom";
-
+import step1 from "../assets/1.gif";
+import step2 from "../assets/2.gif";
+import step3 from "../assets/3.gif";
+import step4 from "../assets/4.gif";
 import Footer from "./Footer";
 const Home = () => {
   const gradientRef = useRef(null);
@@ -174,14 +177,60 @@ useEffect(() => {
 
       {/* How It Works Section */}
       <section className="w-full py-20 relative z-10">
-        <h2 className="text-4xl font-bold text-white mb-12">How It Works</h2>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-10 max-w-5xl mx-auto">
-          <div className="step-card">1️⃣ Connect GitHub</div>
-          <div className="step-card">2️⃣ View PR's</div>
-          <div className="step-card">3️⃣ Review the AI Analysis</div>
-          <div className="step-card">4️⃣ Merge Confidently</div>
-        </div>
-      </section>
+  <h2 className="text-4xl font-bold text-white mb-12 text-center">How It Works</h2>
+  <div className="flex flex-col md:flex-row justify-center items-start gap-10 max-w-5xl mx-auto">
+
+    {/* Step 1 */}
+    <div className="step-card flex flex-col items-center text-center">
+      <div className="text-lg font-semibold">1️⃣ Connect GitHub</div>
+      <div className="w-56 h-36 mt-4 rounded-lg overflow-hidden shadow-lg">
+        <img
+          src={step1}
+          alt="Connect GitHub GIF"
+          className="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+
+    {/* Step 2 */}
+    <div className="step-card flex flex-col items-center text-center">
+      <div className="text-lg font-semibold">2️⃣ View PR's</div>
+      <div className="w-56 h-36 mt-4 rounded-lg overflow-hidden shadow-lg">
+        <img
+          src={step2}
+          alt="View PRs GIF"
+          className="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+
+    {/* Step 3 */}
+    <div className="step-card flex flex-col items-center text-center">
+      <div className="text-lg font-semibold">3️⃣ Review the Analysis</div>
+      <div className="w-56 h-36 mt-4 rounded-lg overflow-hidden shadow-lg">
+        <img
+          src={step3}
+          alt="AI Analysis GIF"
+          className="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+
+    {/* Step 4 */}
+    <div className="step-card flex flex-col items-center text-center">
+      <div className="text-lg font-semibold">4️⃣ Merge Confidently</div>
+      <div className="w-56 h-36 mt-4 rounded-lg overflow-hidden shadow-lg">
+        <img
+          src={step4}
+          alt="Merge Confidently GIF"
+          className="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
       {/* Call to Action Section */}
       <section className="w-full py-20 flex flex-col items-center justify-center gap-6 relative z-10">
